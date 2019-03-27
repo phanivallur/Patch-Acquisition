@@ -1,0 +1,365 @@
+
+C:\04112015>REM Creation of URLs not added 
+
+C:\04112015>set xml_custom_path="C:\Program Files (x86)\PSL\RCA\Data\PatchManager\patch\custom\applicationpatch" 
+
+C:\04112015>set xml_novadigm_path="C:\Program Files (x86)\PSL\RCA\Data\PatchManager\patch\novadigm\applicationpatch" 
+
+C:\04112015>set patchdir="C:\Program Files (x86)\PSL\RCA\PatchManager" 
+
+C:\04112015>set logfile="C:\Program Files (x86)\PSL\RCA\PatchManager"\logs\april_patch-acquisition.log 
+
+C:\04112015>set cmdline=nvdkit-rca-patch.exe modules\patch.tkd acquire -config etc\APSB_MAY.acq -logfile "C:\Program Files (x86)\PSL\RCA\PatchManager"\logs\april_patch-acquisition.log -rcs_user admin -RCS_PASS secret 
+
+C:\04112015>mkdir Logs 
+
+C:\04112015>mkdir Input 
+
+C:\04112015>mkdir Download 
+
+C:\04112015>mkdir Output 
+
+C:\04112015>mkdir Backup 
+
+C:\04112015>perl.exe ./Script/URLCreator.pl 
+
+C:\04112015>java -cp "support_latest.jar;jsoup-1.7.2.jar" com.radia.support.utilities.AdobePageParser 
+AdobePageParser Started
+C:/04112015
+inputXMLParser method started
+Start Bulletin :com.radia.support.utilities.Bulletin@14ae5a5
+1:
+2:APSB17-11
+Bulletin :com.radia.support.utilities.Bulletin@14ae5a5 NameAPSB17-11
+3:https://helpx.adobe.com/security/products/acrobat/apsb17-11.html
+4:Security Updates Available for Adobe Acrobat and Reader
+5:APSB17-11
+6:20170406
+7:20170427
+End Bulletin :com.radia.support.utilities.Bulletin@14ae5a5
+URL : https://helpx.adobe.com/security/products/acrobat/apsb17-11.html
+parseProducts method started
+Products:Reader XI,Reader X,Acrobat XI,Acrobat X
+Products
+How to Buy
+Learn & Support
+About Adobe
+Creative Cloud
+Photoshop
+Illustrator
+InDesign
+Premiere Pro
+After Effects
+Lightroom
+See all
+See plans for: businesses photographers students
+Experience Cloud
+Advertising Cloud
+Analytics Cloud
+Marketing Cloud
+See all solutions for enterprise
+Experience Manager Campaign Analytics Audience Manager
+Document Cloud
+Acrobat DC
+Sign
+Stock
+Elements
+Acrobat Reader DC
+Adobe Flash Player
+Adobe AIR
+Adobe Shockwave Player
+All products
+Creative Cloud
+Individuals
+Photographers
+Students and Teachers
+Business
+Schools and Universities
+Creative Cloud
+Experience Cloud
+Document Cloud
+Stock
+Elements
+All products
+Get Support Find answers quickly. Contact us if you need to. Start now >
+Learn the apps Get started or learn new ways to work. Learn now >
+Ask the community Post questions and get answers from experts. Start now >
+
+About Us
+Newsroom
+Careers At Adobe
+Privacy
+Security
+Corporate Responsibility
+Customer Showcase
+Investor Relations
+Events
+Contact Us
+About Us
+Newsroom
+Careers At Adobe
+Privacy
+Security
+Corporate Responsibility
+Customer Showcase
+Investor Relations
+Events
+Contact Us
+Users can update their product installations manually by choosing Help > Check for Updates.
+The products will update automatically, without requiring user intervention, when updates are detected.
+The full Acrobat Reader installer can be downloaded from the Acrobat Reader Download Center.
+Download the enterprise installers from ftp://ftp.adobe.com/pub/adobe/, or refer to the specific release note version for links to installers.
+Install updates via your preferred methodology, such as AIP-GPO, bootstrapper, SCUP/SCCM (Windows), or on Macintosh, Apple Remote Desktop and SSH.
+These updates resolve use-after-free vulnerabilities that could lead to code execution (CVE- 2017-3014, CVE-2017-3026, CVE-2017-3027, CVE-2017-3035, CVE-2017-3047, CVE-2017-3057).
+These updates resolve heap buffer overflow vulnerabilities that could lead to code execution (CVE-2017-3042, CVE-2017-3048, CVE-2017-3049, CVE-2017-3055).
+These updates resolve memory corruption vulnerabilities that could lead to code execution (CVE-2017-3015, CVE-2017-3017, CVE-2017-3018, CVE-2017-3019, CVE-2017-3023, CVE-2017- 3024, CVE-2017-3025, CVE-2017-3028, CVE-2017-3030, CVE-2017-3036, CVE-2017-3037, CVE- 2017-3038, CVE-2017-3039, CVE-2017-3040, CVE-2017-3041, CVE-2017-3044, CVE-2017-3050, CVE-2017-3051, CVE-2017-3054, CVE-2017-3056, CVE-2017-3065).
+These updates resolve integer overflow vulnerabilities that could lead to code execution (CVE- 2017-3011, CVE-2017-3034).
+These updates resolve memory corruption vulnerabilities that could lead to a memory address leak (CVE-2017-3020, CVE-2017-3021, CVE-2017-3022, CVE-2017-3029, CVE-2017-3031, CVE- 2017-3032, CVE-2017-3033, CVE-2017-3043, CVE-2017-3045, CVE-2017-3046, CVE-2017-3052, CVE-2017-3053).
+These updates resolve vulnerabilities in the directory search path used to find resources that could lead to code execution (CVE-2017-3012, CVE-2017-3013).
+Nicolas Gregoire - Agarri working with Trend Micro's Zero Day Initiative (CVE-2017-3031)
+Weizhong Qian, Fuhao Li and Huinian Yang of ART&UESTC's Neklab (CVE-2017-3037)
+Anonymously reported via iDefense Vulnerability Contributor Program (VCP) (CVE-2017-3014, CVE-2017-3027)
+riusksk (CVE-2017-3039, CVE-2017-3040)
+LiuBenjin of Qihoo360 CodeSafe Team working with Trend Micro's Zero Day Initiative(CVE-2017- 3055)
+Nikolas Sotiriu (CVE-2017-3013)
+Keen Team working with Trend Micro's Zero Day Initiative (CVE-2017-3056, CVE-2017-3057)
+Toan Pham Van ( @__suto ) (CVE-2017-3041)
+AbdulAziz Hariri of Trend Micro's Zero Day Initiative and Steven Seeley (mr_me) of Offensive Security working with Trend Micro's Zero Day Initiative (CVE-2017-3042)
+AbdulAziz Hariri of Trend Micro's Zero Day Initiative (CVE-2017-3043)
+Ashfaq Ansari - Project Srishti via iDefense Vulnerability Contributor Program (VCP) (CVE-2017- 3038)
+Steven Seeley (mr_me) of Offensive Security (CVE-2017-3026, CVE-2017-3054)
+kimyok of Tencent Security Platform Department (CVE-2017-3017, CVE-2017-3018, CVE-2017-3024, CVE-2017-3025, CVE-2017-3065)
+kdot working with Trend Micro's Zero Day Initiative (CVE-2017-3019)
+GRIMM (CVE-2017-3030)
+Steven Seeley (mr_me) of Offensive Security working with Trend Micro's Zero Day Initiative (CVE-2017-3047, CVE-2017-3049)
+Steven Seeley (mr_me) of Offensive Security working with Trend Micro's Zero Day Initiative and Ke Liu of Tencent's Xuanwu LAB (CVE-2017-3050)
+Ke Liu of Tencent's Xuanwu LAB (CVE-2017-3012, CVE-2017-3015)
+soiax working with Trend Micro's Zero Day Initiative (CVE-2017-3022)
+Sebastian Apelt (Siberas) working with Trend Micro's Zero Day Initiative (CVE-2017-3034, CVE- 2017-3035)
+Ke Liu of Tencent's Xuanwu LAB working with Trend Micro's Zero Day Initiative (CVE-2017-3020, CVE-2017-3021, CVE-2017-3023, CVE-2017-3028, CVE-2017-3036, CVE-2017-3048, CVE-2017- 3051, CVE-2017-3052, CVE-2017-3053)
+Jun Mao of Tencent PC Manager via GeekPwn (CVE-2017-3011)
+Giwan Go of STEALIEN working with Trend Micro's Zero Day Initiative (CVE-2017-3029, CVE- 2017-3032, CVE-2017-3033, CVE-2017-3044, CVE-2017-3045, CVE-2017-3046)
+Brasil
+Canada - English
+Canada - Français
+Latinoamérica
+México
+United States
+Africa - English
+Österreich - Deutsch
+Belgium - English
+Belgique - Français
+België - Nederlands
+????????
+Hrvatska
+Cyprus - English
+?eská republika
+Danmark
+Eesti
+Suomi
+France
+Deutschland
+Greece - English
+Magyarország
+Ireland
+Israel - English
+????? - ?????
+Italia
+Latvija
+Lietuva
+Luxembourg - Deutsch
+Luxembourg - English
+Luxembourg - Français
+Malta - English
+????? ?????? ????? ??????? - ????? ???????
+Middle East and North Africa - English
+Moyen-Orient et Afrique du Nord - Français
+Nederland
+Norge
+Polska
+Portugal
+România
+??????
+Srbija
+Slovensko
+Slovenija
+España
+Sverige
+Schweiz - Deutsch
+Suisse - Français
+Svizzera - Italiano
+Türkiye
+???????
+United Kingdom
+Australia
+??
+?????????
+Hong Kong S.A.R. of China
+India - English
+??
+??
+New Zealand
+Southeast Asia (Includes Indonesia, Malaysia, Philippines, Singapore, Thailand, and Vietnam) - English
+??
+Includes Armenia, Azerbaijan, Belarus, Georgia, Moldova, Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, Ukraine, Uzbekistan
+
+Acrobat DC Continuous 15.023.20070 and earlier versions Windows and Macintosh 
+Acrobat Reader DC Continuous 15.023.20070 and earlier versions Windows and Macintosh 
+        
+Acrobat DC Classic 15.006.30280 and earlier versions Windows and Macintosh 
+Acrobat Reader DC Classic 15.006.30280 and earlier versions Windows and Macintosh 
+        
+Acrobat XI Desktop 11.0.19 and earlier versions Windows and Macintosh 
+Acrobat XI Desktop 11.0.19 and earlier versions Windows and Macintosh 	Acrobat XI
+Adobe Acrobat 11.x 11.0.19
+Reader XI Desktop 11.0.19 and earlier versions Windows and Macintosh 
+Reader XI Desktop 11.0.19 and earlier versions Windows and Macintosh 	Reader XI
+Adobe Reader 11.x 11.0.19
+parseProducts method ended
+AdobePageParser Ended
+
+C:\04112015>java -cp "support_latest.jar;jsoup-1.7.2.jar" com.radia.support.utilities.VersionSorting 
+
+C:\04112015>java -cp "support_latest.jar;jsoup-1.7.2.jar" com.radia.support.utilities.CatalogDownloader 
+Content-Type = text/xml
+Content-Disposition = null
+Content-Length = 336880
+fileName = adobecat.xml
+Directory already exists ...
+File downloaded
+
+C:\04112015>java -cp "support_latest.jar;jsoup-1.7.2.jar" com.radia.support.utilities.FileDownloader 
+AcrobatUpd1010.msp is already exists
+AcrobatUpd1011.msp is already exists
+AcrobatUpd1012.msp is already exists
+AcrobatUpd1015.msp is already exists
+AcrobatSecUpd1016.msp is already exists
+AcrobatUpd1017.msp is already exists
+AcrobatUpd1018.msp is already exists
+AcrobatUpd1019.msp is already exists
+AcrobatUpd10110.msp is already exists
+AcrobatSecUpd10111.msp is already exists
+AcrobatUpd10112.msp is already exists
+AcrobatUpd10113.msp is already exists
+AcrobatUpd10114.msp is already exists
+AcrobatUpd10115.msp is already exists
+AcrobatUpd10116.msp is already exists
+AcrobatUpd1014.msp is already exists
+AcrobatUpd11001.msp is already exists
+AcrobatSecUpd11002.msp is already exists
+AcrobatUpd11003.msp is already exists
+AcrobatUpd11004.msp is already exists
+AcrobatSecUpd11005.msp is already exists
+AcrobatUpd11006.msp is already exists
+AcrobatUpd11007.msp is already exists
+AcrobatSecUpd11008.msp is already exists
+AcrobatUpd11009.msp is already exists
+AcrobatUpd1013.msp is already exists
+CustWiz11003_en_US.exe is already exists
+AcrobatUpd11012.msp is already exists
+AcrobatUpd11013.msp is already exists
+AcrobatUpd11014.msp is already exists
+AcrobatSecUpd11015.msp is already exists
+AcrobatUpd11016.msp is already exists
+AcrobatUpd11017.msp is already exists
+AcrobatUpd11018.msp is already exists
+AcrobatUpd11019.msp is already exists
+AcrobatUpd11020.msp is already exists
+AdbeRdr1000_en_US.exe is already exists
+AdbeRdr1001_en_US.exe is already exists
+AdbeRdr1010_en_US.exe is already exists
+AdbeRdr1011_en_US.exe is already exists
+AdbeRdr1012_en_US.exe is already exists
+AdbeRdr1013_en_US.exe is already exists
+AdbeRdr1014_en_US.exe is already exists
+AcrobatUpd11011.msp is already exists
+AcrobatUpd11010.msp is already exists
+AdbeRdrUpd1015.msp is already exists
+AdbeRdrUpd1018.msp is already exists
+AdbeRdrUpd1019.msp is already exists
+AdbeRdrUpd10110.msp is already exists
+AdbeRdrSecUpd10111.msp is already exists
+AdbeRdrUpd10112.msp is already exists
+AdbeRdrSecUpd1016.msp is already exists
+AdbeRdrUpd1017.msp is already exists
+AdbeRdrUpd10113.msp is already exists
+AdbeRdrUpd10116.msp is already exists
+AdbeRdr11000_en_US.exe is already exists
+AdbeRdr11001_en_US.exe is already exists
+AdbeRdrUpd10115.msp is already exists
+AdbeRdr11003_en_US.exe is already exists
+AdbeRdrUpd10114.msp is already exists
+AdbeRdrSecUpd11005.msp is already exists
+AdbeRdr11002_en_US.exe is already exists
+AdbeRdr11006_en_US.exe is already exists
+AdbeRdr11004_en_US.exe is already exists
+AdbeRdr11007_en_US.exe is already exists
+AdbeRdr11009_en_US.exe is already exists
+AdbeRdr11008_en_US.exe is already exists
+AdbeRdr11010_en_US.exe is already exists
+AdbeRdrUpd11011.msp is already exists
+AdbeRdrUpd11012.msp is already exists
+AdbeRdrSecUpd11015.msp is already exists
+AdbeRdrUpd11016.msp is already exists
+AdbeRdrUpd11017.msp is already exists
+AdbeRdrUpd11018.msp is already exists
+AdbeRdrUpd11019.msp is already exists
+AdbeRdrUpd11020.msp is already exists
+AdbeRdrUpd11014.msp is already exists
+AdbeRdrUpd11013.msp is already exists
+Finished all threads
+
+C:\04112015>cd ./Download 
+
+C:\04112015\Download>nvdkit ../Script/UpdateDownloader.tcl  "../Input/Adobe_Reader.txt" 
+
+C:\04112015\Download>nvdkit ../Script/UpdateDownloader.tcl  "../Input/Adobe_Reader.txt" 
+
+C:\04112015\Download>nvdkit ../Script/UpdateDownloader.tcl  "../Input/Adobe_Acrobat.txt" 
+
+C:\04112015\Download>nvdkit ../Script/UpdateDownloader.tcl  "../Input/Adobe_Acrobat.txt" 
+
+C:\04112015\Download>cd .. 
+
+C:\04112015>REM nvdkit ./Script/AdobePageParser.tcl 
+
+C:\04112015>nvdkit ./Script/VersionToURLMapper.tcl ./Input/AdobeBulletinInfo.xml 
+
+C:\04112015>nvdkit ./Script/CatalogCreator.tcl ./Input/AdobeBulletinInfo.xml 
+
+C:\04112015>cd Output 
+
+C:\04112015\Output>del /F adobecat.xml 
+
+C:\04112015\Output>ren "Adobe Catalog.xml" "adobecat_single_bulletin.xml" 
+
+C:\04112015\Output>cd .. 
+
+C:\04112015>nvdkit ./Script/Comparator.tcl 
+
+C:\04112015>cd Output 
+
+C:\04112015\Output>rem ren adobecat.xml adobecat_single_bulletin.xml 
+
+C:\04112015\Output>ren adobecat-old.xml adobecat.xml 
+
+C:\04112015\Output>echo "Catalog creation for new bulletin has been completed" 
+"Catalog creation for new bulletin has been completed"
+
+C:\04112015\Output>echo "Starting acquisition of latest bulletin" 
+"Starting acquisition of latest bulletin"
+
+C:\04112015\Output>copy adobecat.xml "C:\Program Files (x86)\PSL\RCA\Data\PatchManager\patch\custom\applicationpatch" 
+        1 file(s) copied.
+
+C:\04112015\Output>copy adobecat.xml "C:\Program Files (x86)\PSL\RCA\Data\PatchManager\patch\novadigm\applicationpatch" 
+        1 file(s) copied.
+
+C:\04112015\Output>java -jar C:\jar-files\AdobeBulletins.jar 
+APSB11-24,APSB-FLASH-PLAYER,APSB13-15,APSB14-01,APSB14-15,APSB16-33,APSB14-19,APSB14-20,APSB14-28,APSB15-10,APSB15-24,APSB16-02,APSB16-09,APSB16-14,APSB16-26,APSB17-01,APSB17-11
+Bulletins read from acq file: 	BULLETINS APSB17-11
+New Acq file updated
+
+C:\04112015\Output>cd "C:\Program Files (x86)\PSL\RCA\PatchManager" 
+
+C:\Program Files (x86)\PSL\RCA\PatchManager>nvdkit-rca-patch.exe modules\patch.tkd acquire -config etc\APSB_MAY.acq -logfile "C:\Program Files (x86)\PSL\RCA\PatchManager"\logs\april_patch-acquisition.log -rcs_user admin -RCS_PASS secret 
